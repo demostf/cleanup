@@ -20,7 +20,7 @@ async fn main() -> Result<(), MainError> {
         )
         .await?;
 
-    let cutoff_time = Utc::now() - Duration::days(3 * 365);
+    let cutoff_time = Utc::now() - Duration::days(2 * 365);
 
     for demo in demos {
         if demo.time > cutoff_time {
